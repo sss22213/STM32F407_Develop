@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\first.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\first.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060020: Last Updated: Tue Jan 26 01:28:23 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060020: Last Updated: Tue Jan 26 12:04:59 2016
 <BR><P>
 <H3>Maximum Stack Usage =         92 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -422,7 +422,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_100us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task2
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task1
 </UL>
 
 <P><STRONG><a name="[6a]"></a>GPIO_Configurataion</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, main.o(i.GPIO_Configurataion))
@@ -644,7 +645,7 @@ Global Symbols
 
 <P><STRONG><a name="[8f]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[5d]"></a>main</STRONG> (Thumb, 180 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[5d]"></a>main</STRONG> (Thumb, 174 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = main &rArr; USART_Configurataion &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Configurataion
@@ -657,22 +658,23 @@ Global Symbols
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_Configuration
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Configurataion
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Configurataion
-<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Ms
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[61]"></a>task1</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, main.o(i.task1))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = task1
+<P><STRONG><a name="[61]"></a>task1</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, main.o(i.task1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = task1 &rArr; Delay_Ms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ITM_SendChar
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Ms
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
 </UL>
-<P><STRONG><a name="[62]"></a>task2</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, main.o(i.task2))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = task2
+<P><STRONG><a name="[62]"></a>task2</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, main.o(i.task2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = task2 &rArr; Delay_Ms
 </UL>
 <BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ITM_SendChar
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Ms
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
 </UL><P>

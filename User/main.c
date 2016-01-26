@@ -4,11 +4,13 @@
 int task1()
 {
 	ITM_SendChar('a');
+	Delay_Ms(500);
 	return 0;
 }
 int task2()
 {
 	ITM_SendChar('b');
+	Delay_Ms(500);
 	return 0;
 }
 int main()
@@ -30,13 +32,12 @@ int main()
 	/*OS_Init*/
 	OS_Start();
 	/*OS_TASK*/
-	TASK_Create(task1,0,20);
-	TASK_Create(task2,1,50);
+	TASK_Create(task1,0,2);
+	TASK_Create(task2,1,5);
 	
 	while(1)
 	{	
 		TASK_Excute();
-		Delay_Ms(100);
 	}
 	
 }

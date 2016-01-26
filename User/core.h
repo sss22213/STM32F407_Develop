@@ -1,6 +1,6 @@
 #ifndef _CORE_H_
 #define _CORE_H_
-
+#include "main.h"
 //#include <stdio.h>
 //#include <stdlib.h>
 #define TASK_MAX 20

@@ -28,10 +28,14 @@ Project File Date:  01/05/2016
 *** Using Compiler 'V5.06 (build 20)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling main.c...
+..\..\User\main.h(51): warning:  #1-D: last line of file ends without a newline
+  /************************************** (C) COPYRIGHT ??? ***** ???? ****/
 ..\..\User\debug_swv.h(9): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\..\User\Delay.h(9): warning:  #1-D: last line of file ends without a newline
   #endif
+..\..\User\I2C.h(14): warning:  #1295-D: Deprecated declaration Bo_I2C_Init - give arg types
+  void Bo_I2C_Init();
 ..\..\User\I2C.h(31): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\..\User\HTU21.h(21): warning:  #1295-D: Deprecated declaration HTU21_read_temp - give arg types
@@ -44,15 +48,15 @@ compiling main.c...
   #endif
 ..\..\User\main.h(51): warning:  #1-D: last line of file ends without a newline
   /************************************** (C) COPYRIGHT ??? ***** ???? ****/
-..\..\User\main.c(16): warning:  #177-D: variable "k" was declared but never referenced
+..\..\User\main.c(18): warning:  #177-D: variable "k" was declared but never referenced
   	u8 k[1];
-..\..\User\main.c(140): warning:  #1-D: last line of file ends without a newline
+..\..\User\main.c(138): warning:  #1-D: last line of file ends without a newline
   #endif
-..\..\User\main.c: 11 warnings, 0 errors
+..\..\User\main.c: 12 warnings, 0 errors
 linking...
-Program Size: Code=3084 RO-data=424 RW-data=52 ZI-data=1268  
+Program Size: Code=3096 RO-data=424 RW-data=52 ZI-data=1268  
 FromELF: creating hex file...
-".\Objects\first.axf" - 0 Error(s), 10 Warning(s).
+".\Objects\first.axf" - 0 Error(s), 12 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   D:\project\STM32\project\STM32F4\Temp\ARM-MDK\first\RTE

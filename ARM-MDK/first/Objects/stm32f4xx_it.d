@@ -37,6 +37,7 @@
 .\objects\stm32f4xx_it.o: ..\..\F4_Driver\inc\stm32f4xx_fsmc.h
 .\objects\stm32f4xx_it.o: ..\..\User\main.h
 .\objects\stm32f4xx_it.o: ..\..\User\core.h
+.\objects\stm32f4xx_it.o: ..\..\User\main.h
 .\objects\stm32f4xx_it.o: ..\..\User\debug_swv.h
 .\objects\stm32f4xx_it.o: ..\..\User\HTU21.h
 .\objects\stm32f4xx_it.o: ..\..\User\I2C.h

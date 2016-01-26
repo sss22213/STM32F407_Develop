@@ -1,6 +1,7 @@
 .\objects\main.o: ..\..\User\main.c
 .\objects\main.o: ..\..\User\main.h
 .\objects\main.o: ..\..\User\core.h
+.\objects\main.o: ..\..\User\main.h
 .\objects\main.o: ..\..\CMSIS\stm32f4xx.h
 .\objects\main.o: ..\..\CMSIS\core_cm4.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
